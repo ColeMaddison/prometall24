@@ -1,0 +1,342 @@
+{%load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="купить ограды, лавки, скамейки, столы">
+    <meta name="author" content="">
+
+    <title>ПроМеталл24 | {{ ritual_text }}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'bootstrap/css/modern-business.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'bootstrap/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="{% static 'fancybox/jquery.js' %}"></script>
+
+    <!-- подключение CSS файла Fancybox -->
+    <link rel="stylesheet" href="{% static 'fancybox/jquery.fancybox.css' %}" type="text/css" media="screen" />
+
+    <!-- Подключение JS файла Fancybox -->
+    <script type="text/javascript" src="{% static 'fancybox/jquery.fancybox.pack.js' %}"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72064814-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter44061919 = new Ya.Metrika({
+                        id:44061919,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/44061919" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><big>ПроМеталл24</big></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><big>Категории</big> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/mangal/"><big>Мангалы</big></a>
+                            </li>
+                            <li>
+                                <a href="/naves/"><big>Навесы</big></a>
+                            </li>
+                            <li>
+                                <a href="/vorota_kalitki/"><big>Ворота</big></a>
+                            </li>
+                            <li>
+                                <a href="/ritual/"><big>Ритуал</big></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contact/"><big>Контакты</big></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <h4 class="navbar-text">Связаться с нами: 7(903)527-88-72</h4>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Производство ритуальных конструкций
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/">Главная</a>
+                    </li>
+                    <li class="active">
+                        {{ ritual_text }}
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_13.jpg' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_13.jpg' %}" alt="Ритуал-1 / 570 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-1</center>
+                </h3>
+                <h4><p><center> Стоимость: 570 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_2.jpg' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_2.jpg' %}" alt="Ритуал-2 / 570 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-2</center>
+                </h3>
+                <h4><p><center> Стоимость: 570 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_3.gif' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_3.gif' %}" alt="Ритуал-3 / 600 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-3</center>
+                </h3>
+                <h4><p><center> Стоимость: 600 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_14.jpg' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_14.jpg' %}" alt="Ритуал-4 / 570 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-4</center>
+                </h3>
+                <h4><p><center> Стоимость: 570 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_5.gif' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_5.gif' %}" alt="Ритуал-5 / 600 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-5</center>
+                </h3>
+                <h4><p><center> Стоимость: 600 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_6.gif' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_6.gif' %}" alt="Ритуал-6 / 570 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-6</center>
+                </h3>
+                <h4><p><center> Стоимость: 570 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_7.png' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_7.png' %}" alt="Ритуал-7 / 600 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-7</center>
+                </h3>
+                <h4><p><center> Стоимость: 600 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_8.png' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_8.png' %}" alt="Ритуал-8 / 600 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-8</center>
+                </h3>
+                <h4><p><center> Стоимость: 600 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_9.png' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_9.png' %}" alt="Ритуал-9 / 570 р./п.м">
+                </a>
+                <h3>
+                    <center>РТ-9</center>
+                </h3>
+                <h4><p><center> Стоимость: 570 <i class="fa fa-rub "></i> п. м.</p></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_10.gif' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_10.gif' %}" alt="Ритуал-10 / 800 р.">
+                </a>
+                <h3>
+                    <center>РТ-10</center>
+                </h3>
+                <h4><p><center> Стоимость: 800 <i class="fa fa-rub "></i></p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_11.gif' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_11.gif' %}" alt="Ритуал-11 / 1 200 р.">
+                </a>
+                <h3>
+                    <center>РТ-11</center>
+                </h3>
+                <h4><p><center> Стоимость: 1 200 <i class="fa fa-rub "></i></p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_12.jpg' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_12.jpg' %}" alt="Ритуал-12 / 900/1 600/1 200/1 800 р.">
+                </a>
+                <h3>
+                    <center>РТ-12</center>
+                </h3>
+                <h4><p><center> Стоимость: 900/1 600/1 200/1 800 <i class="fa fa-rub "></i></p></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 img-portfolio thumb">
+                <center>
+                    <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_1.jpg' %}">
+                        <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_1.jpg' %}" alt="Ритуал-13 / 1 700 р.">
+                    </a>
+                </center>
+                <h3>
+                    <center>РТ-13</center>
+                </h3>
+                <h4><p><center> Стоимость: 1 700 <i class="fa fa-rub "></i></p></h4>
+            </div>
+            <div class="col-md-4 img-portfolio thumb">
+                <a class="fancyimage" data-fancybox-group="group" href="{% static 'images/ritual/ritual_4.gif' %}">
+                    <img class="img-responsive img-hover img-thumbnail" src="{% static 'images/ritual/ritual_4.gif' %}" alt="Ритуал-14 / 1 200 р.">
+                </a>
+                <h3>
+                    <center>РТ-14</center>
+                </h3>
+                <h4><p><center> Стоимость: 1 200 <i class="fa fa-rub "></i></p></h4>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr><hr>
+
+        <footer>
+            <div class="row breadcrumb">
+                <div class="col-sm-12">
+                    <center>
+                        <ul class="list-unstyled list-inline list-social-icons ">
+                            <!--<li>
+                                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                            </li>-->
+                            <li>
+                                <a href="https://vk.com/id335612934" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                            </li>
+                            <!--<li>
+                                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                            </li>-->
+                        </ul>
+                    </center>
+                    <p><center>&copy; prometall24.ru 2017</center></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <script src="{% static 'bootstrap/js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'fancybox/jquery.fancybox.pack.js' %}"></script>
+
+
+    <!-- Activate fancybox -->
+    <script>
+        $(document).ready(function(){
+            $(".fancyimage").fancybox({
+                beforeShow : function() {
+                    var alt = this.element.find('img').attr('alt');
+
+                    this.inner.find('img').attr('alt', alt);
+
+                    this.title = alt;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
