@@ -8,5 +8,6 @@ urlpatterns = patterns('',
     url(r'^naves/$', views.naves, name='naves'),
     url(r'^vorota_kalitki/$', views.vorota_kalitki, name='vorota_kalitki'),
     url(r'^ritual/$', views.ritual, name='ritual'),
+    url(r'^pandus/$', views.pandus, name='pandus'),
     url(r'^sitemap.xml/$', views.sitemap, name='sitemap'),
 )

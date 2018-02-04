@@ -31,6 +31,11 @@ def ritual(request):
 	args['ritual_text'] = "Ритуал"
 	return render_to_response('ritual.html', args)
 
+def ritual(request):
+	args = {}
+	args['pandus_text'] = "Ритуал"
+	return render_to_response('pandus.html', args)
+
 def sitemap(request):
     args = {}
     args['sitemap'] = " "
